@@ -1,9 +1,18 @@
 {
   "version": 2,
   "builds": [
-    { "src": "nlp_chatbot.py", "use": "@vercel/python" }
+    {
+      "src": "nlp_chatbot.py",
+      "use": "@vercel/python"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "nlp_chatbot.py" }
-  ]
+    {
+      "src": "/(.*)",
+      "dest": "nlp_chatbot.py"
+    }
+  ],
+  "env": {
+    "API_KEY" = "AIzaSyAb4CKQ23uIo9PH-FwkGmoB3yHoJHaYuOI"
+  }
 }
